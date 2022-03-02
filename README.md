@@ -5,8 +5,15 @@ This tool presents a CLI interface allowing you to manage Bandwidth webhook subs
 
 Requires Python 3.7+
 
+This tool depends upon the following environment variables to be set:
+    - bandwidth_account_id=<your account_id>
+    - bandwidth_password=<your password>
+    - bandwidth_site_id=<your site id>
+    - bandwidth_url=https://dashboard.bandwidth.com/api
+    - bandwidth_username=<your username>
+
 Usage:
 
     - pip install bandwidth_cli
-    - cp .env.dist .env and fill with appropriate values
+    - set env vars above
     - bandwidth_cli --help
