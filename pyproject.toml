@@ -19,7 +19,4 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-bandwidth-cli = "foo.__main__:main"
-
-[tool.poetry.scripts]
-bandwidth-cli = 'main:cli'
+bandwidth-cli = 'bandwidth_cli.main:cli'
