@@ -1,9 +1,9 @@
 import click
 from dotenv import load_dotenv
-from commands.create import create_subscription
-from commands.delete import delete_subscription
-from commands.get import get_subscription
-from commands.retrieve import list_subscriptions
+from bandwidth_cli.commands.create import create_subscription
+from bandwidth_cli.commands.delete import delete_subscription
+from bandwidth_cli.commands.get import get_subscription
+from bandwidth_cli.commands.retrieve import list_subscriptions
 
 load_dotenv()
 
