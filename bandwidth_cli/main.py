@@ -1,10 +1,9 @@
-import os
 import click
 from dotenv import load_dotenv
-from commands import create
-from commands import delete
-from commands import get
-from commands import retrieve
+from commands.create import create_subscription
+from commands.delete import delete_subscription
+from commands.get import get_subscription
+from commands.retrieve import list_subscriptions
 
 load_dotenv()
 
@@ -13,10 +12,10 @@ def cli():
     pass
 
 
-cli.add_command(create.create_subscription)
-cli.add_command(retrieve.list_subscriptions)
-cli.add_command(delete.delete_subscription)
-cli.add_command(get.get_subscription)
+cli.add_command(create_subscription)
+cli.add_command(list_subscriptions)
+cli.add_command(delete_subscription)
+cli.add_command(get_subscription)
 
 if __name__ == "__main__":
     cli()
