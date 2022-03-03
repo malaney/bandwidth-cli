@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "bandwidth_cli"
-version = "0.1.2"
+version = "0.1.4"
 description = "CLI for Bandwidth API calls"
 authors = ["Malaney J Hill <mhill@phone.com>"]
 readme = "README.md"
